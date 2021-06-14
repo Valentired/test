@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Choose License Plan</title>
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<form action="" class="order">
+			<!-- Список товаров -->
+			<div class="order__plans">
+				<label class="order__plan">
+					<input class="order__plan-hidden" type="radio" name="order-plan" id="1" value="13" checked/>
+					<p class="order__plan-title"><span class="order__plan-radio"></span>License Plan #1</p>
+					<span class="order__plan-desc">$13 per license</span>
+				</label>
+
+				<label class="order__plan">
+					<input class="order__plan-hidden" type="radio" name="order-plan" id="2" value="22" />
+					<p class="order__plan-title"><span class="order__plan-radio"></span>License Plan #2</p>
+					<span class="order__plan-desc">$22 per license</span>
+				</label>
+
+				<label class="order__plan">
+					<input class="order__plan-hidden" type="radio" name="order-plan" id="3" value="34" />
+					<p class="order__plan-title"><span class="order__plan-radio"></span>License Plan #3</p>
+					<span class="order__plan-desc">$34 per license</span>
+				</label>
+			</div>
+
+			<!-- Выбор количества товаров -->
+			<div class="order__count">
+				<p class="order__count-title">Number of licenses:</p>
+				<div class="order__select">
+					<select class="order__select-inner">
+						<option value="1" class="order__select-option">1</option>
+						<option value="2" class="order__select-option">2</option>
+						<option value="3" class="order__select-option">3</option>
+						<option value="4" class="order__select-option">4</option>
+						<option value="5" class="order__select-option">5</option>
+						<option value="6" class="order__select-option">6</option>
+						<option value="7" class="order__select-option">7</option>
+						<option value="8" class="order__select-option">8</option>
+						<option value="9" class="order__select-option">9</option>
+						<option value="10" class="order__select-option">10</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- Сумма заказа -->
+			<div class="order__total">
+				<div class="order__total-text">Total: <span class="order__total-summary">$340</span></div>
+				<button class="order__btn" type="submit">Buy Now</button>
+				<div class="order__total-selected">Selected plan: <span class="order__total-plan">#3</span></div>
+			</div>
+		</form>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
